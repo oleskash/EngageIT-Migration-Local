@@ -1,4 +1,7 @@
-﻿define('vm.vendors',
+﻿/// <reference path="../knockout-3.4.1.js" />
+
+
+define('vm.vendors',
     ['ko', 'underscore', 'datacontext', 'config', 'router', 'messenger', 'filter.speakers', 'sort', 'store'],
     function (ko, _, datacontext, config, router, messenger,
         SpeakerFilter,
@@ -32,11 +35,11 @@
             }),
 
             getVendors = function (callback) {
-                datacontext.speakerSessions.getLocalSpeakers(speakers, {
-                    //filter: speakerFilter,
-                    sortFunction: sort.speakerSort
-                });
-                if (_.isFunction(callback)) { callback(); }
+                //datacontext.speakerSessions.getLocalSpeakers(speakers, {
+                //    //filter: speakerFilter,
+                //    sortFunction: sort.speakerSort
+                //});
+                //if (_.isFunction(callback)) { callback(); }
             },
 
             gotoDetails = function (selectedSpeaker) {
@@ -52,7 +55,7 @@
 
             refresh = function (callback) {
                 restoreFilter();
-                getSpeakers(callback);
+                getVendors(callback);
             },
 
             restoreFilter = function () {
@@ -67,7 +70,6 @@
             };
 
         init();
-
         return {
             activate: activate,
             canLeave: canLeave,

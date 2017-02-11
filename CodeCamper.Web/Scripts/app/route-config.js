@@ -47,7 +47,13 @@
                         callback: vm.session.activate,
                         group: '.route-left'
                     },
-
+                    {
+                        view: config.viewIds.vendors,
+                        route: config.hashes.vendors,
+                        title: 'Vendors',
+                        callback: vm.vendors.activate,
+                        group: '.route-top'
+                    },
                     // Speaker and speaker details routes
                     {
                         view: config.viewIds.speakers,

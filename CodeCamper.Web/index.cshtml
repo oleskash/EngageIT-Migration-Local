@@ -35,6 +35,7 @@
                 <li class="route-top"><a data-bind="attr: {href: favorites}">Favorites</a></li>
                 <li class="route-top"><a data-bind="attr: {href: sessions}">Sessions</a></li>
                 <li class="route-top"><a data-bind="attr: {href: speakers}">Speakers</a></li>
+                <li class="route-top"><a data-bind="attr: {href: vendors}">Vendors</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +46,7 @@
         @RenderPage("Views/sessions.cshtml")
         @RenderPage("Views/session.cshtml")
         @RenderPage("Views/speaker.cshtml")
-        @*@RenderPage("Views/vendors.cshtml")*@
+        @RenderPage("Views/vendors.cshtml")
     </section>
     
     <!--
@@ -58,9 +59,9 @@
     -->
  
     @Scripts.Render(
-        "~/bundles/jquery", 
-        "~/bundles/jsextlibs", 
-        "~/Scripts/lib/require.js", 
+        "~/bundles/jquery",
+        "~/bundles/jsextlibs",
+        "~/Scripts/lib/require.js",
         "~/bundles/jsapplibs",
         "~/bundles/jsmocks", // remove mocks for release
         "~/Scripts/main.js"

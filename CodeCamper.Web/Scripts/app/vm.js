@@ -8,7 +8,7 @@
         'vm.speaker',
         'vm.speakers'
 ],
-    function (favorites, session, sessions, shell, vendor, vendors, speaker, speakers) {
+    function (favorites, session, sessions, shell, vendors, speaker, speakers) {
         return {
             favorites: favorites,
             session: session,

@@ -12,7 +12,8 @@
                 favorites: '#/favorites',
                 favoritesByDate: '#/favorites/date',
                 sessions: '#/sessions',
-                speakers: '#/speakers'
+                speakers: '#/speakers',
+                vendors: '#/vendors'
             },
             logger = toastr, // use toastr for the logger
             messages = {
